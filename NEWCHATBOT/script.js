@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "<YOUR-API-KEY>";
 
 const sendBtn = document.getElementById("sendBtn");
 const responseBox = document.getElementById("response");
@@ -28,7 +28,7 @@ sendBtn.addEventListener("click", async () => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "llama-3.1-8b-instant",
+        model: "llama-3.1-8b-instant", // MODEL YOU WANT
         messages: [
           { role: "system", content: "You are an assistant helping farmers with crops, market prices, and farming tips." },
           { role: "user", content: question }
